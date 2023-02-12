@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/simple-brush-script" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.cdnfonts.com/css/franklin-gothic" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Thrift</title>
+</head>
+
+<body class="container-fluid">
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#" class="business-name">EVERYTHINGEFFY</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"><input class="mob-search-box" type="text" placeholder="Search..."></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <!-- <li class="mob-search">
+                        <div class="input-box">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </li> -->
+                    <li><a href="#">HOME</a></li>
+
+                    <li>
+                        <a href="#">Men</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="#">T/Shirt & Polo</a></li>
+                            <li><a href="#">Round Neck Shirt</a></li>
+                            <li><a href="#">Tracksuit & Joggers</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Skirt</a></li>
+                            <li><a href="#">Bikini</a></li>
+                            <li><a href="#">Blouse</a></li>
+                            <li class="more">
+                                <span><a href="#">Gown<i class='bx bxs-chevron-right arrow more-arrow'></i></a>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Kimono</a></li>
+                                    <li><a href="#">Corporate Gown</a></li>
+                                    <li><a href="#">Cocktail</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Accessories & Footwear</a>
+                        <i class='bx bxs-chevron-down access-arrow arrow  '></i>
+                        <ul class="access-sub-menu sub-menu">
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Necklace and earrings</a></li>
+                            <li><a href="#">Wristwatches & Belt</a></li>
+                            <li class="more">
+                                <span><a href="#">Shoes</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Sandals</a></li>
+                                    <li><a href="#">Sneakers</a></li>
+                                    <li><a href="#">Heels</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#" class="wish-mob">WISHLIST</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="user-box mobile">
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <div class="cart-box HEART">
+                <i class="fa-solid fa-heart fa-2xl"></i>
+
+
+            </div>
+            <div class="cart-box">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/photo-1540254597053-3901b858d40f.avif" class="d-block w-100"
+                    alt="An image of a tracksuit">
+                <div class="carousel-caption  d-md-block">
+                    <h5></h5>
+                    <p>Adidas Complete White stripes Tracksuit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo-1578237493287-8d4d2b03591a.avif" class="d-block w-100" alt="An image of a tote bag">
+                <div class="carousel-caption  d-md-block">
+                    <h5></h5>
+                    <p>Fancy Black Tote Bag.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo-1583743814966-8936f5b7be1a.avif" class="d-block w-100" alt="A black T-shirt">
+                <div class="carousel-caption  d-md-block">
+                    <h5></h5>
+                    <p>Black Tees </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo-1597045566677-8cf032ed6634.avif" class="d-block w-100" alt="A Nike Sneaker">
+                <div class="carousel-caption  d-md-block">
+                    <h5></h5>
+                    <p>Nike Sneakers</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo-1622079401116-8317808352d9.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h5></h5>
+                    <p>A Blue Cocktail Gown</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+    <!-- <h4 class="newarr">PRE-ORDER NOW!!</h4> -->
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <span class="sector">NEW ARRIVALS</span><a href="" class="btn btn-dark view">VIEW ALL</a>
+        </div>
+    </div>
+    <!-- <div class="jumbotron"><h2 class="sector">MEN's SECTION</h2> <span class="btn btn-dark dbtn">View All</span></div> -->
+    <br><br>
+    <section id="market " class="text-center justify-content-center ">
+        <div class="cards text-center justify-content-center container-fluid">
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        </div>
+    </section>
+    <br><br><br><br>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <span class="sector">COLLECTOR'S PICKS</span><a href="" class="btn btn-dark view">VIEW ALL</a>
+        </div>
+    </div>
+    <br>
+    <section id="market " class="text-center justify-content-center ">
+        <div class="cards text-center justify-content-center container-fluid">
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="dress-card">
+                    <div class="dress-card-head">
+                        <img class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+
+                    </div>
+                    <div class="dress-card-body">
+                        <h4 class="dress-card-title">Harpa</h4>
+                        <p class="dress-card-para">Womans printed clothing</p>
+                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                OFF)</span></p>
+
+                        <div class="cards">
+                            <div class=" card-button">
+                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            </div>
+                            <span class=" inner2">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span class=" inner3">
+                                <i class="fa-solid fa-heart "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
