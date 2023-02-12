@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/simple-brush-script');
 @import url('https://fonts.cdnfonts.com/css/franklin-gothic');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   min-height: 100vh;
 }
 
+/* NAVBAR */
 nav {
   position: fixed;
   top: 0;
@@ -23,8 +25,10 @@ nav {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
-.business-name{
-  font-family: 'Montserrat';font-size: 22px;
+
+.business-name {
+  font-family: 'Montserrat';
+  font-size: 22px;
   font-style: italic;
 }
 
@@ -158,8 +162,9 @@ nav .navbar .links li:hover .access-sub-menu {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .navbar .cart-box i {
-  
+
   height: 100%;
   width: 100%;
   line-height: 40px;
@@ -169,8 +174,17 @@ nav .navbar .links li:hover .access-sub-menu {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.notification .badge {
+  position: absolute;
+  top: 17px;
+  right: 30px;
+  padding: 5px 10px;
+  color: white;
+  font-size: medium;
+}
+
 .navbar .user-box i {
-  
+
   height: 100%;
   width: 100%;
   line-height: 40px;
@@ -193,6 +207,7 @@ nav .navbar .links li:hover .access-sub-menu {
   pointer-events: none;
   transition: all 0.4s ease;
 }
+
 /* li.mob-search {
   display: none;
 } */
@@ -299,7 +314,7 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 
   .sidebar-logo .logo-name {
-    
+
     color: #fff;
     font-family: cursive;
   }
@@ -369,8 +384,7 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 
   nav .navbar .links li:hover .htmlCss-sub-menu,
-  nav .navbar .links li:hover .js-sub-menu
-  nav .navbar .links li:hover .access-sub-menu {
+  nav .navbar .links li:hover .js-sub-menu nav .navbar .links li:hover .access-sub-menu {
     display: none;
   }
 
@@ -390,6 +404,7 @@ nav .navbar .links li:hover .access-sub-menu {
   .navbar .nav-links.show2 .links .more-arrow {
     transform: rotate(90deg);
   }
+
   /* .mob-search {
     display: block;
   } */
@@ -400,7 +415,7 @@ nav .navbar .links li:hover .access-sub-menu {
   .HEART {
     display: none;
   }
- 
+
 
 }
 
@@ -410,12 +425,13 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 }
 
+/* PRODUCTS ARRANGEMENT */
 .newarr {
   text-align: center;
   font-family: 'Franklin Gothic', sans-serif;
   font-size: x-large;
-                                                
-  
+
+
 }
 
 .d-block {
@@ -438,7 +454,7 @@ nav .navbar .links li:hover .access-sub-menu {
 .card {
   padding: 1rem;
 
-  
+
 }
 
 .cards {
@@ -447,20 +463,21 @@ nav .navbar .links li:hover .access-sub-menu {
   margin: 0 auto;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
 }
+
 @media (max-width: 900px) {
   .cards {
-     grid-template-columns: repeat(2, 1fr);
-     gap: 0.5rem;
-     }
-     
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
 
 }
 
 .jumbotron {
   border: solid;
- border-radius: 1px;
+  border-radius: 1px;
   height: 70px;
   background: sienna;
   color: white;
@@ -481,12 +498,12 @@ nav .navbar .links li:hover .access-sub-menu {
 }
 
 .dress-card-img-top {
-  width:100%;
+  width: 100%;
   border-radius: 7px 7px 0 0;
 }
 
 .dress-card-body {
-  padding:1rem;
+  padding: 1rem;
   background: #fff;
   border-radius: 0 0 7px 7px;
 }
@@ -524,16 +541,18 @@ nav .navbar .links li:hover .access-sub-menu {
   text-transform: uppercase;
   font-size: 15px;
   padding: 9px;
- 
+
 }
+
 .heartwish {
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   padding: 9px;
   cursor: pointer;
- 
+
 }
+
 .card-button a {
   text-decoration: none;
 }
@@ -549,7 +568,7 @@ nav .navbar .links li:hover .access-sub-menu {
   color: white;
 }
 
-.bag-button :hover{
+.bag-button :hover {
   background: #e299b9;
 }
 
@@ -558,25 +577,20 @@ nav .navbar .links li:hover .access-sub-menu {
   color: #E06C9F;
 }
 
-#outer
-{
-    width:100%;
-    text-align: left;
-    
-}
-.inner
-{
-    display: inline-block;
-    
+#outer {
+  width: 100%;
+  text-align: left;
+
 }
 
-.inner2 i {
+
+.likebtn i {
   color: #E06C9F;
   font-size: x-large;
   margin-top: 16px;
- }
+}
 
-.inner3 {
+.likedbtn {
   display: none;
   color: #E06C9F;
   font-size: x-large;
@@ -585,17 +599,19 @@ nav .navbar .links li:hover .access-sub-menu {
 
 @media (max-width:920px) {
   .card-button-inner {
-   width: 120px;
+    width: 120px;
   }
-  .inner2 i {
+
+  .likebtn i {
     font-size: 20px;
     margin-top: 18px;
-   }
-   .inner3 i {
+  }
+
+  .likedbtn i {
     font-size: 20px;
     margin-top: 5px;
-   }
-  
+  }
+
 }
 
 
@@ -614,8 +630,8 @@ ion-icon{
 } */
 
 
-@-webkit-keyframes like {
+/* @-webkit-keyframes like {
   0%   { transform: scale(1); }
   90%   { transform: scale(1.2); }
   100% { transform: scale(1.1); }
-}
+} */
