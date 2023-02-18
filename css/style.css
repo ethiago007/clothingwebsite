@@ -174,15 +174,23 @@ nav .navbar .links li:hover .access-sub-menu {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .notification .badge {
   position: absolute;
   top: 17px;
-  right: 30px;
+  right: 20px;
   padding: 5px 10px;
   color: white;
   font-size: medium;
 }
-
+.notification .badge2 {
+  position: absolute;
+  top: 1px;
+  right: 60px;
+  padding: 5px 10px;
+  color: white;
+  font-size: medium;
+}
 .navbar .user-box i {
 
   height: 100%;
@@ -263,7 +271,7 @@ nav .navbar .links li:hover .access-sub-menu {
   display: none;
 }
 
-@media (max-width:920px) {
+@media (max-width:1024px) {
   nav .navbar {
     max-width: 100%;
     padding: 0 25px;
@@ -283,9 +291,33 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 }
 
+@media (width:1024px) {
+  .notification .badge {
+    top: 5px;
+    right: 9px;
+    padding: 5px 10px;
+  }
+  .notification .badge2 {
+    
+    top: 1px;
+    right: 40px;
+    padding: 5px 10px;
+  }
+}
+
+
+
 @media (max-width:920px) {
-  nav {
-    /* position: relative; */
+  .notification .badge {
+    top: 5px;
+    right: 10px;
+    padding: 5px 10px;
+  }
+  .notification .badge2 {
+    position: absolute;
+    top: 1px;
+    right: 100px;
+    padding: 5px 10px;
   }
 
   .navbar .bx-menu {
@@ -408,6 +440,11 @@ nav .navbar .links li:hover .access-sub-menu {
   /* .mob-search {
     display: block;
   } */
+ 
+
+
+}
+@media (max-width:700px) {
   .search-box {
     display: none;
   }
@@ -416,12 +453,17 @@ nav .navbar .links li:hover .access-sub-menu {
     display: none;
   }
 
-
 }
 
 @media (max-width:370px) {
   nav .navbar .nav-links {
     max-width: 100%;
+  }
+
+  .notification .badge {
+    top: 5px;
+    right: 12px;
+    padding: 5px 10px;
   }
 }
 
@@ -466,13 +508,25 @@ nav .navbar .links li:hover .access-sub-menu {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 920px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
+}
 
-
+@media (max-width: 370px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.1rem;
+  }
 }
 
 .jumbotron {
@@ -597,7 +651,7 @@ nav .navbar .links li:hover .access-sub-menu {
   margin-top: 14px;
 }
 
-@media (max-width:920px) {
+@media (max-width:700px) {
   .card-button-inner {
     width: 120px;
   }

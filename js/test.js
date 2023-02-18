@@ -140,7 +140,6 @@ var shoppingCart = (function() {
   // Triggers / Events
   // ***************************************** 
   // Add item
-  $(document).ready(function () {
   $('.add-to-cart').click(function(event) {
     event.preventDefault();
     var name = $(this).data('name');
@@ -207,4 +206,4 @@ var shoppingCart = (function() {
   });
   
   displayCart();
-});
+ 

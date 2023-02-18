@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.cdnfonts.com/css/franklin-gothic" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
     <title>Thrift</title>
 </head>
 
@@ -88,7 +89,8 @@
                         </ul>
                     </li>
                     <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#" class="wish-mob">WISHLIST</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="wish-mob">WISHLIST</a>
+                    </li>
                 </ul>
             </div>
             <div class="search-box">
@@ -104,18 +106,27 @@
             </div>
 
             <div class="cart-box HEART">
-                <i class="fa-solid fa-heart fa-2xl"></i>
+                <a href="#" class="notification">
+                    <span><i data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                            class="fa-solid fa-heart fa-2xl"></i></span>
+                    <span class="badge">
+                        <span class="badge2"><span class="total-countList"></span></span>
+                    </span>
+                </a>
+
 
 
             </div>
             <div class="cart-box">
                 <a href="#" class="notification">
-                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span><i data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="fa-solid fa-cart-shopping"></i></span>
                     <span class="badge"><span class="total-count"></span></span>
-                  </a>
-                
+                </a>
+
 
             </div>
+
         </div>
     </nav>
     <br><br><br><br>
@@ -187,6 +198,46 @@
         </button>
     </div>
     <br><br>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger">Clear Cart</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Wishlist</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-list table" cellpadding="0" cellspacing="0" border="0" width="100%">
+
+                    </table>
+                    <div>Total price: $<span class="total-list"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-item btn btn-danger">Clear Wishlist</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <h4 class="newarr">PRE-ORDER NOW!!</h4> -->
 
     <div class="container-fluid">
@@ -215,14 +266,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner1">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner1 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner1_5">
+                            <span class="likedbtn inner1_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -244,14 +300,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner2">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner2 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner2_5">
+                            <span class="likedbtn inner2_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -273,14 +334,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner3">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner3 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner3_5">
+                            <span class="likedbtn inner3_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -302,14 +368,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner4">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner4 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner4_5">
+                            <span class="likedbtn inner4_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -331,14 +402,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner5">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner5 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner5_5">
+                            <span class="likedbtn inner5_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -360,14 +436,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner6">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner6 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner6_5">
+                            <span class="likedbtn inner6_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -389,14 +470,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner7">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner7 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner7_5">
+                            <span class="likedbtn inner7_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -418,14 +504,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner8">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner8 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner8_5">
+                            <span class="likedbtn inner8_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -464,14 +555,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner9">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner9 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner9 _5">
+                            <span class="likedbtn inner9_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -493,14 +589,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner10">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner10 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner10_5">
+                            <span class="likedbtn inner10_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -522,14 +623,19 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner11">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner11 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner11_5">
+                            <span class="likedbtn inner11_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
@@ -551,134 +657,158 @@
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                                <div data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span class="likebtn inner12">
+                            <span data-name="Orange" data-price="0.5"
+                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="likebtn inner12 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner12_5">
+                            <span class="likedbtn inner12_5 delete-item" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="dress-card">
-                    <div class="dress-card-head">
-                        <img class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="">
+                <div class="item">
+                    <div class="dress-card">
+                        <div class="dress-card-head">
+                            <img class="dress-card-img-top"
+                                src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
 
-                    </div>
-                    <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        </div>
+                        <div class="dress-card-body">
+                            <h4 class="dress-card-title">Harpa</h4>
+                            <p class="dress-card-para">Womans printed clothing</p>
+                            <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                    class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                    OFF)</span></p>
 
-                        <div class="cards">
-                            <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            <div class="cards">
+                                <div class=" card-button">
+                                    <div data-name="Orange" data-price="0.5"
+                                        data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                        class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                                </div>
+                                <span data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="likebtn inner13 add-to-list">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="likedbtn inner13_5 delete-item" data-name="Orange">
+                                    <i class="fa-solid fa-heart "></i>
+                                </span>
+
                             </div>
-                            <span class="likebtn inner13">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
-                            <span class="likedbtn inner13_5">
-                                <i class="fa-solid fa-heart "></i>
-                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="dress-card">
-                    <div class="dress-card-head">
-                        <img class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="">
+                <div class="item">
+                    <div class="dress-card">
+                        <div class="dress-card-head">
+                            <img class="dress-card-img-top"
+                                src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
 
-                    </div>
-                    <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        </div>
+                        <div class="dress-card-body">
+                            <h4 class="dress-card-title">Harpa</h4>
+                            <p class="dress-card-para">Womans printed clothing</p>
+                            <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                    class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                    OFF)</span></p>
 
-                        <div class="cards">
-                            <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            <div class="cards">
+                                <div class=" card-button">
+                                    <div data-name="Orange" data-price="0.5"
+                                        data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                        class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                                </div>
+                                <span data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="likebtn inner14 add-to-list">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="likedbtn inner14_5 delete-item" data-name="Orange">
+                                    <i class="fa-solid fa-heart "></i>
+                                </span>
+
                             </div>
-                            <span class="likebtn inner14">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
-                            <span class="likedbtn inner14_5">
-                                <i class="fa-solid fa-heart "></i>
-                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="dress-card">
-                    <div class="dress-card-head">
-                        <img class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="">
+                <div class="item">
+                    <div class="dress-card">
+                        <div class="dress-card-head">
+                            <img class="dress-card-img-top"
+                                src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
 
-                    </div>
-                    <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        </div>
+                        <div class="dress-card-body">
+                            <h4 class="dress-card-title">Harpa</h4>
+                            <p class="dress-card-para">Womans printed clothing</p>
+                            <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                    class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                    OFF)</span></p>
 
-                        <div class="cards">
-                            <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            <div class="cards">
+                                <div class=" card-button">
+                                    <div data-name="Orange" data-price="0.5"
+                                        data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                        class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                                </div>
+                                <span data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="likebtn inner15 add-to-list">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="likedbtn inner15_5 delete-item" data-name="Orange">
+                                    <i class="fa-solid fa-heart "></i>
+                                </span>
+
                             </div>
-                            <span class="likebtn inner15">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
-                            <span class="likedbtn inner15_5">
-                                <i class="fa-solid fa-heart "></i>
-                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="dress-card">
-                    <div class="dress-card-head">
-                        <img class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                            alt="">
+                <div class="item">
+                    <div class="dress-card">
+                        <div class="dress-card-head">
+                            <img class="dress-card-img-top"
+                                src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
 
-                    </div>
-                    <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        </div>
+                        <div class="dress-card-body">
+                            <h4 class="dress-card-title">Harpa</h4>
+                            <p class="dress-card-para">Womans printed clothing</p>
+                            <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
+                                    class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                                    OFF)</span></p>
 
-                        <div class="cards">
-                            <div class=" card-button">
-                                <div class="card-button-inner bag-button">Add to Cart </div>
+                            <div class="cards">
+                                <div class=" card-button">
+                                    <div data-name="Orange" data-price="0.5"
+                                        data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                        class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                                </div>
+                                <span data-name="Orange" data-price="0.5"
+                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="likebtn inner16 add-to-list">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span class="likedbtn inner16_5 delete-item" data-name="Orange">
+                                    <i class="fa-solid fa-heart "></i>
+                                </span>
+
                             </div>
-                            <span class="likebtn inner16">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
-                            <span class="likedbtn inner16_5">
-                                <i class="fa-solid fa-heart "></i>
-                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
     </section>
 
 
@@ -693,6 +823,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </body>
 
 </html>
