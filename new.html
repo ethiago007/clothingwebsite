@@ -359,7 +359,7 @@
           <li><a href="#">CONTACT US</a></li>
         </ul>
       </div>
-      <div class="search-box">
+      <div  class="search-box">
         <i class='bx bx-search'></i>
         <div class="input-box">
           <input type="text" placeholder="Search...">
@@ -367,6 +367,66 @@
       </div>
     </div>
   </nav>
+  <style>
+    .product-showcase {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sizes {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+.prod {
+  width: 400px;
+}
+@media (max-width: 750px) {
+  .prod {
+    width: 100%;
+  }
+  .sizes {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (width: 768px) {
+  .prod {
+    width: 100%;
+  }
+  .product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (width: 810px) {
+  .prod {
+    width: 100%;
+  }
+  .product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (width: 1024px) {
+  .prod {
+    width: 400px;
+  }
+  
+}
+@media (max-width: 370px) {
+ 
+  .prod {
+    width: 100%;
+  }
+}
+  </style>
   <!--<script src="script.js"></script>-->
 
 <script>  // search-box open close js code

@@ -499,6 +499,27 @@ nav .navbar .links li:hover .access-sub-menu {
 
 }
 
+.product-showcase {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sizes {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.prod {
+  width: 400px;
+}
+
 .cards {
   max-width: 1200px;
   width: 100%;
@@ -520,6 +541,40 @@ nav .navbar .links li:hover .access-sub-menu {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
+ 
+}
+@media (max-width: 750px) {
+  .prod {
+    width: 100%;
+  }
+  .sizes {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (width: 768px) {
+  .prod {
+    width: 100%;
+  }
+  .product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (width: 810px) {
+  .prod {
+    width: 100%;
+  }
+  .product-showcase {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (width: 1024px) {
+  .prod {
+    width: 400px;
+  }
+  
 }
 
 @media (max-width: 370px) {
@@ -527,7 +582,15 @@ nav .navbar .links li:hover .access-sub-menu {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.1rem;
   }
+  .prod {
+    width: 100%;
+  }
 }
+
+marquee {
+  background-color: yellow;
+}
+
 
 .jumbotron {
   border: solid;
@@ -596,6 +659,14 @@ nav .navbar .links li:hover .access-sub-menu {
   font-size: 15px;
   padding: 9px;
 
+}
+
+.modalbtn {
+  text-align: center;
+}
+
+.paramodal {
+  align-content: center;
 }
 
 .heartwish {
@@ -667,6 +738,7 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 
 }
+
 
 
 /* ion-icon.active{
