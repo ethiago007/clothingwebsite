@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/simple-brush-script');
 @import url('https://fonts.cdnfonts.com/css/franklin-gothic');
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+
 
 * {
   margin: 0;
@@ -739,7 +741,129 @@ marquee {
 
 }
 
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  display: none;
+}
 
+
+/* SIDEBAR CODE */
+[class*="entypo-"]:before {
+  font-family: "entypo", sans-serif;
+  }
+  #sticky-social a {
+  text-decoration: none;
+  text-align:center;
+  }
+  #sticky-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #sticky-social {
+  left: 0;
+  position: fixed;
+  top: 15%;
+  z-index: 2500;
+  
+  }
+  #sticky-social a {
+  position: absolute;
+  width: 36px;
+  background: #333;
+  color: #fff;
+  display: block;
+  height: 39px;
+  font: 17px "Roboto", sans-serif;
+  line-height: 36px;
+  position: relative;
+  text-align: center;
+  left:0;
+  transition: width .3s;
+  top: 420px;
+  
+  }
+  #sticky-social a span {
+  line-height: 36px;
+  left: -160px;
+  position: absolute;
+  text-align:center;
+  width:160px;
+  height: 39px;
+  
+  }
+  
+
+
+  #sticky-social a:hover {
+  left: 200%;
+  width:70px;
+  text-align: left;
+  }
+  #sticky-social a[class*="facebook"],
+  #sticky-social a[class*="facebook"]:hover,
+  #sticky-social a[class*="facebook"] span { background: #3b5998; }
+  
+  #sticky-social a[class*="twitter"],
+  #sticky-social a[class*="twitter"]:hover,
+  #sticky-social a[class*="twitter"] span { background: #00aced; }
+  
+  #sticky-social a[class*="whatsapp"],
+  #sticky-social a[class*="whatsapp"]:hover,
+  #sticky-social a[class*="whatsapp"] span { background: #25D366 }
+    
+  #sticky-social a[class*="instagrem"],
+  #sticky-social a[class*="instagrem"]:hover,
+  #sticky-social a[class*="instagrem"] span { background-image: linear-gradient(#5f4fa4,#e21591, #fed768); }
+  
+
+  
+  
+  .fa-whatsapp::after {
+  
+  font-family: 'Roboto';
+  margin-top: 25px;
+  font-size: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  
+  }
+  
+  .entypo-twitter::after {
+  
+  font-family: 'Roboto';
+  margin-top: 25px;
+  font-size: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  }
+  .entypo-facebook::after {
+  
+  font-family: 'Roboto';
+  margin-top: 25px;
+  font-size: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  }
+  .entypo-instagrem::after {
+  
+    font-family: 'Roboto';
+    margin-top: 25px;
+    font-size: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    }
 
 /* ion-icon.active{
   animation:like 0.5s 1;

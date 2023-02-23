@@ -1,474 +1,138 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-   <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
-    <link rel="stylesheet" href="style.css">
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SideBar Sticky</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+
+[class*="entypo-"]:before {
+font-family: "entypo", sans-serif;
+}
+#sticky-social a {
+text-decoration: none;
+text-align:center;
+}
+#sticky-social ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#sticky-social {
+left: 0;
+position: fixed;
+top: 15%;
+z-index: 2500;
+}
+#sticky-social a {
+//position: absolute;
+width: 78px;
+background: #333;
+color: #fff;
+display: block;
+height: 75px;
+font: 20px "Roboto", sans-serif;
+line-height: 60px;
+position: relative;
+text-align: center;
+left:0;
+transition: width .3s;
+}
+#sticky-social a span {
+line-height: 75px;
+left: -160px;
+position: absolute;
+text-align:center;
+width:160px;
+
+}
+
+#sticky-social a:hover {
+left: 100%;
+width:160px;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #517fa4; }
+
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span { background: #eb4924; }
+
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span { background: #cc2127; }
+
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] span { background: #ff0084; }
+
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span { background: #32506d; }
+
+.entypo-gplus::after {
+
+font-family: 'Roboto';
+margin-top: 25px;
+font-size: 10px;
+position: absolute;
+width: 100%;
+text-align: center;
+left: 0px;
+}
+
+.entypo-twitter::after {
+
+font-family: 'Roboto';
+margin-top: 25px;
+font-size: 10px;
+position: absolute;
+width: 100%;
+text-align: center;
+left: 0px;
+}
+.entypo-facebook::after {
+
+font-family: 'Roboto';
+margin-top: 25px;
+font-size: 10px;
+position: absolute;
+width: 100%;
+text-align: center;
+left: 0px;
+}
+
+
+</style>
+</head>
 <body>
-<style>/* Googlefont Poppins CDN Link */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body{
-      min-height: 100vh;
-    }
-    nav{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      height: 70px;
-      background: #3E8DA8;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      z-index: 99;
-    }
-    nav .navbar{
-      height: 100%;
-      max-width: 1250px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: auto;
-      /* background: red; */
-      padding: 0 50px;
-    }
-    .navbar .logo a{
-      font-size: 30px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav .navbar .nav-links{
-      line-height: 70px;
-      height: 100%;
-    }
-    nav .navbar .links{
-      display: flex;
-    }
-    nav .navbar .links li{
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      list-style: none;
-      padding: 0 14px;
-    }
-    nav .navbar .links li a{
-      height: 100%;
-      text-decoration: none;
-      white-space: nowrap;
-      color: #fff;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .links li:hover .htmlcss-arrow,
-    .links li:hover .js-arrow{
-      transform: rotate(180deg);
-      }
-    
-    nav .navbar .links li .arrow{
-      /* background: red; */
-      height: 100%;
-      width: 22px;
-      line-height: 70px;
-      text-align: center;
-      display: inline-block;
-      color: #fff;
-      transition: all 0.3s ease;
-    }
-    nav .navbar .links li .sub-menu{
-      position: absolute;
-      top: 70px;
-      left: 0;
-      line-height: 40px;
-      background: #3E8DA8;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      border-radius: 0 0 4px 4px;
-      display: none;
-      z-index: 2;
-    }
-    nav .navbar .links li:hover .htmlCss-sub-menu,
-    nav .navbar .links li:hover .js-sub-menu{
-      display: block;
-    }
-    .navbar .links li .sub-menu li{
-      padding: 0 22px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    .navbar .links li .sub-menu a{
-      color: #fff;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .navbar .links li .sub-menu .more-arrow{
-      line-height: 40px;
-    }
-    .navbar .links li .htmlCss-more-sub-menu{
-      /* line-height: 40px; */
-    }
-    .navbar .links li .sub-menu .more-sub-menu{
-      position: absolute;
-      top: 0;
-      left: 100%;
-      border-radius: 0 4px 4px 4px;
-      z-index: 1;
-      display: none;
-    }
-    .links li .sub-menu .more:hover .more-sub-menu{
-      display: block;
-    }
-    .navbar .search-box{
-      position: relative;
-       height: 40px;
-      width: 40px;
-    }
-    .navbar .search-box i{
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      line-height: 40px;
-      text-align: center;
-      font-size: 22px;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .navbar .search-box .input-box{
-      position: absolute;
-      right: calc(100% - 40px);
-      top: 80px;
-      height: 60px;
-      width: 300px;
-      background: #3E8DA8;
-      border-radius: 6px;
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.4s ease;
-    }
-    .navbar.showInput .search-box .input-box{
-      top: 65px;
-      opacity: 1;
-      pointer-events: auto;
-      background: #3E8DA8;
-    }
-    .search-box .input-box::before{
-      content: '';
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      background: #3E8DA8;
-      right: 10px;
-      top: -6px;
-      transform: rotate(45deg);
-    }
-    .search-box .input-box input{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-radius: 4px;
-      transform: translate(-50%, -50%);
-      height: 35px;
-      width: 280px;
-      outline: none;
-      padding: 0 15px;
-      font-size: 16px;
-      border: none;
-    }
-    .navbar .nav-links .sidebar-logo{
-      display: none;
-    }
-    .navbar .bx-menu{
-      display: none;
-    }
-    @media (max-width:920px) {
-      nav .navbar{
-        max-width: 100%;
-        padding: 0 25px;
-      }
-    
-      nav .navbar .logo a{
-        font-size: 27px;
-      }
-      nav .navbar .links li{
-        padding: 0 10px;
-        white-space: nowrap;
-      }
-      nav .navbar .links li a{
-        font-size: 15px;
-      }
-    }
-    @media (max-width:800px){
-      nav{
-        /* position: relative; */
-      }
-      .navbar .bx-menu{
-        display: block;
-      }
-      nav .navbar .nav-links{
-        position: fixed;
-        top: 0;
-        left: -100%;
-        display: block;
-        max-width: 270px;
-        width: 100%;
-        background:  #3E8DA8;
-        line-height: 40px;
-        padding: 20px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.5s ease;
-        z-index: 1000;
-      }
-      .navbar .nav-links .sidebar-logo{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .sidebar-logo .logo-name{
-        font-size: 25px;
-        color: #fff;
-      }
-        .sidebar-logo  i,
-        .navbar .bx-menu{
-          font-size: 25px;
-          color: #fff;
-        }
-      nav .navbar .links{
-        display: block;
-        margin-top: 20px;
-      }
-      nav .navbar .links li .arrow{
-        line-height: 40px;
-      }
-    nav .navbar .links li{
-        display: block;
-      }
-    nav .navbar .links li .sub-menu{
-      position: relative;
-      top: 0;
-      box-shadow: none;
-      display: none;
-    }
-    nav .navbar .links li .sub-menu li{
-      border-bottom: none;
-    
-    }
-    .navbar .links li .sub-menu .more-sub-menu{
-      display: none;
-      position: relative;
-      left: 0;
-    }
-    .navbar .links li .sub-menu .more-sub-menu li{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .links li:hover .htmlcss-arrow,
-    .links li:hover .js-arrow{
-      transform: rotate(0deg);
-      }
-      .navbar .links li .sub-menu .more-sub-menu{
-        display: none;
-      }
-      .navbar .links li .sub-menu .more span{
-        /* background: red; */
-        display: flex;
-        align-items: center;
-        /* justify-content: space-between; */
-      }
-    
-      .links li .sub-menu .more:hover .more-sub-menu{
-        display: none;
-      }
-      nav .navbar .links li:hover .htmlCss-sub-menu,
-      nav .navbar .links li:hover .js-sub-menu{
-        display: none;
-      }
-    .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-      .navbar .nav-links.show3 .links .js-sub-menu,
-      .navbar .nav-links.show2 .links .more .more-sub-menu{
-          display: block;
-        }
-        .navbar .nav-links.show1 .links .htmlcss-arrow,
-        .navbar .nav-links.show3 .links .js-arrow{
-            transform: rotate(180deg);
-    }
-        .navbar .nav-links.show2 .links .more-arrow{
-          transform: rotate(90deg);
-        }
-    }
-    @media (max-width:370px){
-      nav .navbar .nav-links{
-      max-width: 100%;
-    } 
-    }
-    </style>
-
-  <nav>
-    <div class="navbar">
-      <i class='bx bx-menu'></i>
-      <div class="logo"><a href="#">CodingLab</a></div>
-      <div class="nav-links">
-        <div class="sidebar-logo">
-          <span class="logo-name">CodingLab</span>
-          <i class='bx bx-x' ></i>
-        </div>
-        <ul class="links">
-          <li><a href="#">HOME</a></li>
-          <li>
-            <a href="#">HTML & CSS</a>
-            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-            <ul class="htmlCss-sub-menu sub-menu">
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Login Forms</a></li>
-              <li><a href="#">Card Design</a></li>
-              <li class="more">
-                <span><a href="#">More</a>
-                <i class='bx bxs-chevron-right arrow more-arrow'></i>
-              </span>
-                <ul class="more-sub-menu sub-menu">
-                  <li><a href="#">Neumorphism</a></li>
-                  <li><a href="#">Pre-loader</a></li>
-                  <li><a href="#">Glassmorphism</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">JAVASCRIPT</a>
-            <i class='bx bxs-chevron-down js-arrow arrow '></i>
-            <ul class="js-sub-menu sub-menu">
-              <li><a href="#">Dynamic Clock</a></li>
-              <li><a href="#">Form Validation</a></li>
-              <li><a href="#">Card Slider</a></li>
-              <li><a href="#">Complete Website</a></li>
-            </ul>
-          </li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">CONTACT US</a></li>
-        </ul>
-      </div>
-      <div  class="search-box">
-        <i class='bx bx-search'></i>
-        <div class="input-box">
-          <input type="text" placeholder="Search...">
-        </div>
-      </div>
-    </div>
-  </nav>
-  <style>
-    .product-showcase {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-.sizes {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(5, 1fr);
-}
-.prod {
-  width: 400px;
-}
-@media (max-width: 750px) {
-  .prod {
-    width: 100%;
-  }
-  .sizes {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .product-showcase {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (width: 768px) {
-  .prod {
-    width: 100%;
-  }
-  .product-showcase {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (width: 810px) {
-  .prod {
-    width: 100%;
-  }
-  .product-showcase {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (width: 1024px) {
-  .prod {
-    width: 400px;
-  }
-  
-}
-@media (max-width: 370px) {
- 
-  .prod {
-    width: 100%;
-  }
-}
-  </style>
-  <!--<script src="script.js"></script>-->
-
-<script>  // search-box open close js code
-    let navbar = document.querySelector(".navbar");
-    let searchBox = document.querySelector(".search-box .bx-search");
-    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
-    
-    searchBox.addEventListener("click", ()=>{
-      navbar.classList.toggle("showInput");
-      if(navbar.classList.contains("showInput")){
-        searchBox.classList.replace("bx-search" ,"bx-x");
-      }else {
-        searchBox.classList.replace("bx-x" ,"bx-search");
-      }
-    });
-    
-    // sidebar open close js code
-    let navLinks = document.querySelector(".nav-links");
-    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-    menuOpenBtn.onclick = function() {
-    navLinks.style.left = "0";
-    }
-    menuCloseBtn.onclick = function() {
-    navLinks.style.left = "-100%";
-    }
-    
-    
-    // sidebar submenu open close js code
-    let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-    htmlcssArrow.onclick = function() {
-     navLinks.classList.toggle("show1");
-    }
-    let moreArrow = document.querySelector(".more-arrow");
-    moreArrow.onclick = function() {
-     navLinks.classList.toggle("show2");
-    }
-    let jsArrow = document.querySelector(".js-arrow");
-    jsArrow.onclick = function() {
-     navLinks.classList.toggle("show3");
-    }
-    </script>  
+<div style="height:1024px;"><h1>Sticky Social Button</h1></div>
+<div id="sticky-social">
+<ul>
+<li><a href="#" class="entypo-gplus" target="_blank"><span>Google Plus</span></a></li>
+<li><a href="#" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
+<li><a href="#" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+</ul>
+</div>
 </body>
-
 </html>

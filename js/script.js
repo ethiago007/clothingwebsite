@@ -431,12 +431,10 @@ function displayDescription() {
   });
 
 
-
-
-
-
-
-
+// ---------------VIEW ALL PRODUCTS INFO TRIGGER----------------
+ $(".view").click(function (){
+  showInfoAlert();
+ })
 
 
 
