@@ -38,6 +38,10 @@ let moreArrow = document.querySelector(".more-arrow");
 moreArrow.onclick = function () {
     navLinks.classList.toggle("show2");
 }
+let moreArrow2 = document.querySelector(".more-arrow2");
+moreArrow2.onclick = function () {
+    navLinks.classList.toggle("show5");
+}
 let jsArrow = document.querySelector(".js-arrow");
 jsArrow.onclick = function () {
     navLinks.classList.toggle("show3");
@@ -395,12 +399,13 @@ let prodPreview = (function () {
     prev = [];
 
     
-    function Item(name, price, count, img, description) {
+    function Item(name, price, count, img, description, code) {
         this.name = name;
         this.price = price;
         this.count = count;
         this.img = img;
         this.description = description;
+        this.code = code
     }
 
     
@@ -421,7 +426,7 @@ let prodPreview = (function () {
     let preview = {};
 
     
-    preview.addItemToPrev = function (name, price, count, img, description) {
+    preview.addItemToPrev = function (name, price, count, img, description, code) {
         for (let item in prev) {
             if (prev[item].name === name) {
                 prev[item].count++;
@@ -429,7 +434,7 @@ let prodPreview = (function () {
                 return;
             }
         }
-        let item = new Item(name, price, count, img, description);
+        let item = new Item(name, price, count, img, description, code);
         prev.push(item);
         savePrev();
     }

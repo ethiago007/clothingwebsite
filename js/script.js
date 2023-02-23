@@ -159,12 +159,13 @@ $(document).ready(function () {
     let name = $(this).data('name');
     let price = Number($(this).data('price'));
     let img = $(this).data('img');
-    let description = $(this).data('description')
+    let description = $(this).data('description');
+    let code = $(this).data('code');
 
-    prodPreview.addItemToPrev(name, price, 1, img, description);
+    prodPreview.addItemToPrev(name, price, 1, img, description, code);
     displayDescription();
     prodPreview.clearList();
-    displayDescription
+    
   });
 
   // ----------------ADDING ITEM TO CART FROM PREVIEW--------------------
@@ -272,13 +273,13 @@ function displayDescription() {
           + '<div class="form-check form-check-inline">'
           + '<input class="form-check-input" type="radio" name="inlineRadioOptions"'
           + 'id="inlineRadio5" value="XXL">'
-          + '<label class="form-check-label" for="inlineRadio">XXL </label>'
+          + '<label class="form-check-label" for="inlineRadio">XXL</label>'
           + '</div>'
           + '</div>'
           + '</p>'
           + '<hr>'
           + '<p>'
-          + '<span><strong>PRODUCT CODE:</strong> BTS-IC00526</span>'
+          + '<span><strong>PRODUCT CODE:</strong> ' + descArray[i].code + '</span>'
           + '</p>'
           + '<div class="paramodal">'
           + '<div data-name="' + descArray[i].name + '" data-price="' + descArray[i].price + '"'

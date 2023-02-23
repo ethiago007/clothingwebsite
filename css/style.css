@@ -423,9 +423,10 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 
   .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-  .navbar .nav-links.show4 .links .access-sub-menu,
+  .navbar .nav-links.show4 .links .access-sub-menu ,
   .navbar .nav-links.show3 .links .js-sub-menu,
-  .navbar .nav-links.show2 .links .more .more-sub-menu {
+  .navbar .nav-links.show2 .links .more .more-sub-menu,
+  .navbar .nav-links.show5 .links .more2 .more-sub-menu2 {
     display: block;
   }
 
@@ -436,6 +437,9 @@ nav .navbar .links li:hover .access-sub-menu {
   }
 
   .navbar .nav-links.show2 .links .more-arrow {
+    transform: rotate(90deg);
+  }
+  .navbar .nav-links.show5 .links .more-arrow2 {
     transform: rotate(90deg);
   }
 
