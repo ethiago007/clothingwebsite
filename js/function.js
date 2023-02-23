@@ -67,6 +67,30 @@ function myFunction(y) {
         $(".wish-mob").hide();
     }
 }
+let z = window.matchMedia("(max-width: 700px)")
+myFunction(z) // Call listener function at run time
+z.addListener(myFunction) // Attach listener function on state changes
+function myFunction(z) {
+  if (z.matches) { // If media query matches
+    $("#carouselExampleCaptions").show();
+    $(".welcomeimg").hide();
+  } else {
+    $("#carouselExampleCaptions").hide();
+    $(".welcomeimg").show();
+  }
+}
+let a = window.matchMedia("(min-width: 720px)")
+myFunction(a) // Call listener function at run time
+a.addListener(myFunction) // Attach listener function on state changes
+function myFunction(a) {
+  if (a.matches) { // If media query matches
+    $(".welcomeimg").show();
+    $("#carouselExampleCaptions").hide();
+  } else {
+    $(".welcomeimg").hide();
+    $("#carouselExampleCaptions").show();
+  }
+}
 
 
 //--------------------- CART ADDITION NOTIFICATION CODE --------------------
@@ -415,7 +439,7 @@ let prodPreview = (function () {
 
     
     function loadPrev() {
-        cart = JSON.parse(sessionStorage.getItem('prodPreview'));
+        prev = JSON.parse(sessionStorage.getItem('prodPreview'));
     }
     if (sessionStorage.getItem("prodPreview") != null) {
         loadPrev();

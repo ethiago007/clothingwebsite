@@ -18,17 +18,15 @@ $(document).ready(function () {
     let name = $(this).data('name');
     let price = Number($(this).data('price'));
     let img = $(this).data('img');
-    let description = $(this).data('description')
-
-    shoppingCart.addItemToCart(name, price, 1, img, description);
+    
+    shoppingCart.addItemToCart(name, price, 1, img);
     displayCart();
   });
 
   // ------------------CLEAR ITEMS----------------
   $('.clear-cart').click(function () {
     shoppingCart.clearCart();
-    prodPreview.clearList();
-    displayDescription
+   
     displayCart();
   });
 
@@ -232,20 +230,20 @@ function displayList() {
 
 // ------------------PREVIEW CODE--------------------
 function displayDescription() {
-  let descArray = prodPreview.listPrev();
+  let cartArray = prodPreview.listPrev();
   let output = "";
-  for (let i in descArray) {
+  for (let i in cartArray) {
       output += '<div class="product-showcase">'
           + '<div>'
-          + '<img class="prod" src="' + descArray[i].img + '" alt="">'
+          + '<img class="prod" src="' + cartArray[i].img + '" alt="">'
           + '</div>'
           + '<div>'
           + '<b>'
-          + '<h1>' + descArray[i].name + '</h1>'
+          + '<h1>' + cartArray[i].name + '</h1>'
           + '</b>'
           + '<br>'
-          + '<h1>$' + descArray[i].price + '</h1>'
-          + '<p>' + descArray[i].description + '</p>'
+          + '<h1>$' + cartArray[i].price + '</h1>'
+          + '<p>' + cartArray[i].description + '</p>'
           + '<br><br>'
           + '<p>'
           + '<div><b>Size:</b></div>'
@@ -279,11 +277,11 @@ function displayDescription() {
           + '</p>'
           + '<hr>'
           + '<p>'
-          + '<span><strong>PRODUCT CODE:</strong> ' + descArray[i].code + '</span>'
+          + '<span><strong>PRODUCT CODE:</strong> ' + cartArray[i].code + '</span>'
           + '</p>'
           + '<div class="paramodal">'
-          + '<div data-name="' + descArray[i].name + '" data-price="' + descArray[i].price + '"'
-          + 'data-img="' + descArray[i].img + '"'
+          + '<div data-name="' + cartArray[i].name + '" data-price="' + cartArray[i].price + '"'
+          + 'data-img="' + cartArray[i].img + '"'
           + 'class="add-to-cart modalbtn btn btn-outline-secondary">Add to Cart'
           + '</div>'
           + '</div>'

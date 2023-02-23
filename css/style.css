@@ -281,16 +281,16 @@ nav .navbar .links li:hover .access-sub-menu {
   border-radius: 5px;
 }
 
-.wish-mob {
-  display: none;
-}
-
 .navbar .nav-links .sidebar-logo {
   display: none;
 }
 
 .navbar .bx-menu {
   display: none;
+}
+
+.wish-mob {
+  display: block;
 }
 
 
