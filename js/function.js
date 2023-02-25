@@ -47,55 +47,102 @@ jsArrow.onclick = function () {
     navLinks.classList.toggle("show3");
 }
 
+// CODE FOR SHOWING SEARCH BOX IN NAVBAR MOBILE FORM
 let x = window.matchMedia("(max-width: 920px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+myFunction(x)
+x.addListener(myFunction)
 function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x.matches) {
         $(".mob-search").show();
     } else {
         $(".mob-search").hide();
     }
 }
+
+// CODE FOR SHOWING WISHLIST IN NAVBAR MOBILE FORM
 let y = window.matchMedia("(max-width: 920px)")
-myFunction(y) // Call listener function at run time
-y.addListener(myFunction) // Attach listener function on state changes
+myFunction(y)
+y.addListener(myFunction)
 function myFunction(y) {
-    if (y.matches) { // If media query matches
+    if (y.matches) {
         $(".wish-mob").show();
     } else {
         $(".wish-mob").hide();
     }
 }
-let z = window.matchMedia("(max-width: 700px)")
-myFunction(z) // Call listener function at run time
-z.addListener(myFunction) // Attach listener function on state changes
-function myFunction(z) {
-  if (z.matches) { // If media query matches
-    $("#carouselExampleCaptions").show();
-    $(".welcomeimg").hide();
-  } else {
-    $("#carouselExampleCaptions").hide();
-    $(".welcomeimg").show();
-  }
+// let z = window.matchMedia("(max-width: 700px)")
+// myFunction(z) 
+// z.addListener(myFunction) 
+// function myFunction(z) {
+//     if (z.matches) { 
+//         $("#carouselExampleCaptions").show();
+//         $(".welcomeimg").hide();
+//     } else {
+//         $("#carouselExampleCaptions").hide();
+//         $(".welcomeimg").show();
+//     }
+// }
+
+// CODE FOR GIVINIG SPACE 
+function myFunction2(k) {
+    if (k.matches) {
+        $(".space").html("<br><br>");
+    }
 }
+let k = window.matchMedia("(max-width: 720px)")
+myFunction2(k)
+k.addListener(myFunction2)
+
+//  CODE FOR SHOWING CAROUSEL IN MOBILE
 let a = window.matchMedia("(min-width: 720px)")
-myFunction(a) // Call listener function at run time
-a.addListener(myFunction) // Attach listener function on state changes
+myFunction(a)
+a.addListener(myFunction)
 function myFunction(a) {
-  if (a.matches) { // If media query matches
-    $(".welcomeimg").show();
-    $("#carouselExampleCaptions").hide();
-  } else {
-    $(".welcomeimg").hide();
-    $("#carouselExampleCaptions").show();
-  }
+    if (a.matches) {
+        $("#carouselExampleCaptions").hide();
+    } else {
+        $("#carouselExampleCaptions").show();
+    }
 }
 
+// CODE FOR TEXT ANIMATIONS
+let textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({ loop: false })
+    .add({
+        targets: '.ml12 .letter',
+        translateX: [40, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+    }).add({
+        targets: '.ml12 .letter',
+        opacity: [1],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: (el, i) => 100 + 30 * i
+    });
+let textWrapper2 = document.querySelector('.ml10 .letters');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({ loop: false })
+    .add({
+        targets: '.ml10 .letter',
+        rotateY: [-90, 0],
+        duration: 1300,
+        delay: (el, i) => 85 * i
+    }).add({
+        targets: '.ml10',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
 
 //--------------------- CART ADDITION NOTIFICATION CODE --------------------
-
-
 
 function showError() {
     Swal.fire({
@@ -124,25 +171,25 @@ let mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-  scrollFunction();
+    scrollFunction();
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
@@ -419,10 +466,10 @@ let wishList = (function () {
 })();
 
 let prodPreview = (function () {
-    
+
     prev = [];
 
-    
+
     function Item(name, price, count, img, description, code) {
         this.name = name;
         this.price = price;
@@ -432,12 +479,12 @@ let prodPreview = (function () {
         this.code = code
     }
 
-    
+
     function savePrev() {
         sessionStorage.setItem('prodPreview', JSON.stringify(prev));
     }
 
-    
+
     function loadPrev() {
         prev = JSON.parse(sessionStorage.getItem('prodPreview'));
     }
@@ -446,15 +493,15 @@ let prodPreview = (function () {
     }
 
 
-    
+
     let preview = {};
 
-    
+
     preview.addItemToPrev = function (name, price, count, img, description, code) {
         for (let item in prev) {
             if (prev[item].name === name) {
                 prev[item].count++;
-                
+
                 return;
             }
         }
@@ -467,8 +514,8 @@ let prodPreview = (function () {
         savePrev();
     }
 
-  
-    
+
+
     preview.listPrev = function () {
         let prevCopy = [];
         for (i in prev) {
@@ -483,9 +530,9 @@ let prodPreview = (function () {
         }
         return prevCopy;
     }
-    
 
-    
+
+
     return preview;
 })();
 

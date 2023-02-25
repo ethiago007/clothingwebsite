@@ -23,7 +23,7 @@ nav {
   width: 100%;
   height: 100%;
   height: 70px;
-  background: sienna;
+  background: #241E20;;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
@@ -295,16 +295,66 @@ nav .navbar .links li:hover .access-sub-menu {
 
 
 
-/* WELCOME IMG */
+/* WELCOME IMG AND TEXT ANIMATION */
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
 
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
 
-.welcomeimg   {
-  width: 100%;
-  height:500px;
-  background-image: url(https://thumbs.dreamstime.com/b/clothes-shop-8633252.jpg);
+.ml10 .letter {
+  margin-top: 120px;
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+.ml12 {
+  font-size: 2em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-family: cursive;
+}
+
+.welcomeimg {
+  height: 400px;
+  background-image: url(../img/photo_5933941273469762240_y.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.welcometext {
+  text-align: center;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #241E20;
+  color: #fff;
+  
+}
+
+.welcome-user {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: repeat(2, 1fr);
+  
 }
 
 
@@ -373,7 +423,7 @@ marquee {
   border: solid;
   border-radius: 1px;
   height: 70px;
-  background: sienna;
+  background: #241E20;;
   color: white;
 }
 
@@ -405,6 +455,10 @@ marquee {
   border-radius: 7px 7px 0 0;
 }
 
+
+
+
+
 .dress-card-body {
   padding: 1rem;
   background: #fff;
@@ -412,7 +466,7 @@ marquee {
 }
 
 .dress-card-title {
-  line-height: 0.5rem;
+  line-height: 1.5rem;
 }
 
 .dress-card-crossed {
@@ -425,7 +479,7 @@ marquee {
 }
 
 .dress-card-off {
-  color: #E06C9F;
+  color: #241E20;;
 }
 
 .dress-card-para {
@@ -471,18 +525,21 @@ marquee {
   width: 200px;
 }
 
+.card-button-inner:hover {
+  cursor: pointer;
+}
 .bag-button {
-  background: #E06C9F;
+  background: #241E20;;
   color: white;
 }
 
 .bag-button :hover {
-  background: #e299b9;
+  background: #241E20;;
 }
 
 .wish-button {
-  border: 1px solid #E06C9F;
-  color: #E06C9F;
+  border: 1px solid #241E20;;
+  color: #241E20;;
 }
 
 #outer {
@@ -491,14 +548,14 @@ marquee {
 }
 
 .likebtn i {
-  color: #E06C9F;
+  color: #241E20;;
   font-size: x-large;
   margin-top: 16px;
 }
 
 .likedbtn {
   display: none;
-  color: #E06C9F;
+  color: #241E20;;
   font-size: x-large;
   margin-top: 14px;
 }
@@ -570,6 +627,7 @@ marquee {
   left: 200%;
   width: 70px;
   text-align: left;
+  border-radius: 2px;
 }
 
 #sticky-social a[class*="facebook"],

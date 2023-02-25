@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    
+
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -21,6 +21,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" /> -->
     <link rel="icon" type="image/jpg" sizes="32x32" href="img/photo_5933941273469762240_y.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>EVERYTHINGEFFY</title>
 </head>
 
@@ -139,24 +140,39 @@
 
         </div>
     </nav>
-  
+
     <div id="sticky-social">
         <ul>
-            <li><a href="https://wa.me/message/QVNRLGTFOZ33D1" class="whatsapp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
+            <li><a href="https://wa.me/message/QVNRLGTFOZ33D1" class="whatsapp"><i
+                        class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
             <li><a href="#" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
-            <li><a href="https://web.facebook.com/profile.php?id=100087431983297" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
-            <li><a href="https://instagram.com/everything_effy?igshid=YmMyMTA2M2Y=" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
+            <li><a href="https://web.facebook.com/profile.php?id=100087431983297" class="entypo-facebook"
+                    target="_blank"><span>Facebook</span></a></li>
+            <li><a href="https://instagram.com/everything_effy?igshid=YmMyMTA2M2Y=" class="entypo-instagrem"
+                    target="_blank"><span>Instagram</span></a></li>
         </ul>
     </div>
-<!-- <a href="#" class="fa-brands fa-whatsapp" target="_blank"><span>What's App</span></a> -->
+    <!-- <a href="#" class="fa-brands fa-whatsapp" target="_blank"><span>What's App</span></a> -->
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
     <br><br><br><br>
+    <div class="container-fluid">
+        <div class="welcome-user">
+            <div class="welcomeimg"></div>
+            <div class="welcometext">
+                <h1 class="ml10">
+                    <span class="text-wrapper">
+                        <span class="letters">Everything Effy</span>
+                    </span>
+                </h1>
+                <h5 class="ml12">...your comfort is our mission.</h5>
 
-
-    <div class="welcomeimg"></div>
+            </div>  
+        </div>
+    </div>
+    <span class="space"></span>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -221,7 +237,8 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <br><br>
+    <span class="space"></span>
+
     <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -276,16 +293,17 @@
             </div>
         </div>
     </div>
-
+    <br><br>
     <!-- <h4 class="newarr">PRE-ORDER NOW!!</h4> -->
 
     <div class="container-fluid">
         <div class="jumbotron">
-            <span class="sector">HOT DEALS</span><button class="btn btn-dark view">VIEW ALL</button>
+            <span class="sector">HOT DEALS</span><button class="btn btn-light view">VIEW ALL</button>
         </div>
     </div>
     <br>
-    <marquee behavior="scroll" direction="left" scrollamount="12">GET 20% OFF THESE HOT DEALS!!!! (Valid for 2 hours)
+    <marquee behavior="scroll" direction="left" scrollamount="12">GET 20% OFF THESE HOT DEALS!!!! (Valid for 2
+        hours)
     </marquee>
     <!-- <div class="jumbotron"><h2 class="sector">MEN's SECTION</h2> <span class="btn btn-dark dbtn">View All</span></div> -->
     <br><br>
@@ -295,7 +313,7 @@
                 <div class="dress-card">
                     <div class="dress-card-head">
                         <img data-bs-toggle="modal" data-bs-target="#exampleModal3"
-                            data-name="Tommy Hilfigher Black T-Shirt" data-price="20"
+                            data-name="Tommy-Hilfigher-Black-T-Shirt" data-price="48"
                             data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                             data-description="A Casual Designer Tommy Hilfigher Black T-shirt" data-code="PDT-IC00006"
                             class="dress-card-img-top"
@@ -304,24 +322,24 @@
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Tommy Hilfigher Black T-Shirt</h4>
+                        <p class="dress-card-para">Male Wears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$48 &ensp;</span><span
+                                class="dress-card-crossed">$60</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Tommy Hilfigher Black T-Shirt" data-price="0.5"
+                                <div data-name="Tommy-Hilfigher-Black-T-Shirt" data-price="48"
                                     data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Tommy Hilfigher Black T-Shirt" data-price="0.5"
+                            <span data-name="Tommy-Hilfigher-Black-T-Shirt" data-price="48"
                                 data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner1 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner1_5 delete-item" data-name="Apple">
+                            <span class="likedbtn inner1_5 delete-item2" data-name="Tommy-Hilfigher-Black-T-Shirt">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -332,32 +350,34 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Orange" data-price="0.5"
-                            data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                            data-description="A Casual Black T-shirt" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Nike-Air-Sneakers"
+                            data-price="160"
+                            data-img="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="Very Stylish and Comfy Nike Air Sneakers" data-code="PDT-IC00234"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Nike Air Max Sneakers</h4>
+                        <p class="dress-card-para">Footwears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$160 &ensp;</span><span
+                                class="dress-card-crossed">$200</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Nike-Air-Sneakers" data-price="160"
+                                    data-img="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Nike-Air-Sneakers" data-price="160"
+                                data-img="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhpbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner2 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner2_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner2_5 delete-item2" data-name="Nike-Air-Sneakers">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -368,30 +388,33 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-name="OFF-White-Joggers"
+                            data-img="https://images.unsplash.com/photo-1552904219-f4b87efe8792?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9nZ2Vyc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            data-description="A High Fashion OFF-WHITE Joggers" data-code="PDT-IC00874" data-price="200"
+                            data-bs-target="#exampleModal3" class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1552904219-f4b87efe8792?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9nZ2Vyc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Off White Joggers</h4>
+                        <p class="dress-card-para">Men's Wears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$200 &ensp;</span><span
+                                class="dress-card-crossed">$250</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="OFF-White-Joggers" data-price="200"
+                                    data-img="https://images.unsplash.com/photo-1552904219-f4b87efe8792?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9nZ2Vyc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="OFF-White-Joggers" data-price="200"
+                                data-img="https://images.unsplash.com/photo-1552904219-f4b87efe8792?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9nZ2Vyc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner3 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner3_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner3_5 delete-item2" data-name="OFF-White-Joggers">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -402,30 +425,34 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Floral-Long-Sleeves"
+                            data-price="220"
+                            data-img="https://images.unsplash.com/photo-1616313253719-c46514cddee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBjbG90aGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="An Elegant Floral Patterned Long Sleeved Gown" data-code="PDT-IC00746"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1616313253719-c46514cddee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBjbG90aGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Floral Long Sleeve Gown</h4>
+                        <p class="dress-card-para">Women's Wears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$144 &ensp;</span><span
+                                class="dress-card-crossed">$180</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Floral-Long-Sleeves" data-price="140"
+                                    data-img="https://images.unsplash.com/photo-1616313253719-c46514cddee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBjbG90aGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Floral-Long-Sleeves" data-price="140"
+                                data-img="https://images.unsplash.com/photo-1616313253719-c46514cddee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBjbG90aGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner4 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner4_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner4_5 delete-item2" data-name="Floral-Long-Sleeves">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -436,30 +463,34 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Fendi-Mini-Skirt"
+                            data-price="144"
+                            data-img="https://images.unsplash.com/photo-1589229945620-e34681bd1ecf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2tpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="Designer Fendi Mini Skirt" data-code="PDT-IC00586"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1589229945620-e34681bd1ecf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2tpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Fendi Mini Skirt</h4>
+                        <p class="dress-card-para">Women's Wears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$144 &ensp;</span><span
+                                class="dress-card-crossed">$180</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Fendi-Mini-Skirt" data-price="144"
+                                    data-img="https://images.unsplash.com/photo-1589229945620-e34681bd1ecf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2tpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Fendi-Mini-Skirt" data-price="144"
+                                data-img="https://images.unsplash.com/photo-1589229945620-e34681bd1ecf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2tpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner5 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner5_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner5_5 delete-item2" data-name="Fendi-Mini-Skirt">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -470,30 +501,34 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="YSL-Bag"
+                            data-price="176"
+                            data-img="https://images.unsplash.com/photo-1638023075118-9096e2a1a213?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc2lnbmVyJTIwYmFnc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            data-description="A red Yves Saint Laurent designer hand-bag" data-code="PDT-IC00219"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1638023075118-9096e2a1a213?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc2lnbmVyJTIwYmFnc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60 "
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">YSL Hand Bag</h4>
+                        <p class="dress-card-para">Accessories</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$176 &ensp;</span><span
+                                class="dress-card-crossed">$220</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="YSL-Bag" data-price="176"
+                                    data-img="https://images.unsplash.com/photo-1638023075118-9096e2a1a213?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc2lnbmVyJTIwYmFnc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="YSL-Bag" data-price="176"
+                                data-img="https://images.unsplash.com/photo-1638023075118-9096e2a1a213?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc2lnbmVyJTIwYmFnc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner6 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner6_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner6_5 delete-item2" data-name="YSL-Bag">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -504,30 +539,34 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Rolex"
+                            data-price="1520"
+                            data-img="https://images.unsplash.com/photo-1606744188285-d0a49e58f538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cm9sZXh8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="A silver Rolex" data-code="PDT-IC00286"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1606744188285-d0a49e58f538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cm9sZXh8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Silver Rolex Wristwatch</h4>
+                        <p class="dress-card-para">Accessories</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$1,520 &ensp;</span><span
+                                class="dress-card-crossed">$1,900</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Rolex" data-price="1520"
+                                    data-img="https://images.unsplash.com/photo-1606744188285-d0a49e58f538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cm9sZXh8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Rolex" data-price="1520"
+                                data-img="https://images.unsplash.com/photo-1606744188285-d0a49e58f538?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cm9sZXh8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner7 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner7_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner7_5 delete-item2" data-name="Rolex">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -538,30 +577,34 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Pandora-Jewellery-Set"
+                            data-price="1512"
+                            data-img="https://plus.unsplash.com/premium_photo-1661645487449-e20bf088390f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fG5lY2tsYWNlJTIwYW5kJTIwZWFycmluZ3N8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="A Complete Pandora Jewellery Set" data-code="PDT-IC000594"
+                            class="dress-card-img-top"
+                            src="https://plus.unsplash.com/premium_photo-1661645487449-e20bf088390f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fG5lY2tsYWNlJTIwYW5kJTIwZWFycmluZ3N8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
+                        <h4 class="dress-card-title">Pandora Jewellery Set</h4>
+                        <p class="dress-card-para">Accessories</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$1,512 &ensp;</span><span
+                                class="dress-card-crossed">$1,890</span><span class="dress-card-off">&ensp;(20%
                                 OFF)</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Pandora-Jewellery-Set" data-price="1512"
+                                    data-img="https://plus.unsplash.com/premium_photo-1661645487449-e20bf088390f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fG5lY2tsYWNlJTIwYW5kJTIwZWFycmluZ3N8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Pandora-Jewellery-Set" data-price="1512"
+                                data-img="https://plus.unsplash.com/premium_photo-1661645487449-e20bf088390f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fG5lY2tsYWNlJTIwYW5kJTIwZWFycmluZ3N8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner8 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner8_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner8_5 delete-item2" data-name="Pandora-Jewellery-Set">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -578,9 +621,10 @@
         </div>
     </section>
     <br><br><br><br>
+    
     <div class="container-fluid">
         <div class="jumbotron">
-            <span class="sector">COLLECTOR'S PICKS</span><button class="btn btn-dark view">VIEW ALL</button>
+            <span class="sector">POPULAR DEMANDS</span><button class="btn btn-light view">VIEW ALL</button>
         </div>
     </div>
     <br>
@@ -589,30 +633,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Nike-Hoodie"
+                            data-price="520"
+                            data-img="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9vZGllc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            data-description="Very Stylish and Comfy Nike Hoodie" data-code="PDT-IC00193"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9vZGllc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">Nike Hoodie</h4>
+                        <p class="dress-card-para">Unisex Wears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$520 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Nike-Hoodie" data-price="520"
+                                    data-img="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9vZGllc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
                             <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                data-img="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9vZGllc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner9 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner9_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner9_5 delete-item2" data-name="Orange">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -623,30 +669,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Denim-Jean"
+                            data-price="180"
+                            data-img="https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dHJvdXNlcnN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="A Denim-Jean for Women" data-code="PDT-IC00656"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dHJvdXNlcnN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">Denim Jean</h4>
+                        <p class="dress-card-para">Women's Wear</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$180 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
+                                <div data-name="Denim-Jean" data-price="180"
                                     data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
+                            <span data-name="Denim-Jean" data-price="180"
                                 data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner10 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner10_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner10_5 delete-item2" data-name="Denim-Jean">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -657,30 +705,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Versace-Sunglasses"
+                            data-price="50"
+                            data-img="https://images.unsplash.com/photo-1546728150-b3cbeddb6f6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwc2hhZGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="Versace Sunshades" data-code="PDT-IC00226"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1546728150-b3cbeddb6f6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwc2hhZGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">Versace Sunshades</h4>
+                        <p class="dress-card-para">Accessories</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$50 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Versace-Sunglasses" data-price="50"
+                                    data-img="https://images.unsplash.com/photo-1546728150-b3cbeddb6f6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwc2hhZGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Versace-Sunglasses" data-price="50"
+                                data-img="https://images.unsplash.com/photo-1546728150-b3cbeddb6f6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwc2hhZGVzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner11 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner11_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner11_5 delete-item2" data-name="Versace-Sunglasses">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -691,30 +741,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="JimmyChoo-Silver-Heels"
+                            data-price="100"
+                            data-img="https://images.unsplash.com/photo-1632793039681-2cf5f97be82c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVlbHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="Glittering Silver designer Jimmy Choo High Heels" data-code="PDT-IC00840"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1632793039681-2cf5f97be82c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVlbHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">JimmyChoo High Heels</h4>
+                        <p class="dress-card-para">FootWears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$100 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="JimmyChoo-Silver-Heels" data-price="100"
+                                    data-img="https://images.unsplash.com/photo-1632793039681-2cf5f97be82c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVlbHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="JimmyChoo-Silver-Heels" data-price="100"
+                                data-img="https://images.unsplash.com/photo-1632793039681-2cf5f97be82c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGVlbHN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner12 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner12_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner12_5 delete-item2" data-name="JimmyChoo-Silver-Heels">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -725,30 +777,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Birkenstock-Sandal-Slides"
+                            data-price="100"
+                            data-img="https://images.unsplash.com/photo-1603487742131-4160ec999306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FuZGFsc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            data-description="Birkenstock Sandal Slides" data-code="PDT-IC00556"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1603487742131-4160ec999306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FuZGFsc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">Birkenstock Sandal Slide</h4>
+                        <p class="dress-card-para">FootWears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$100 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
+                                <div data-name="Birkenstock-Sandal-Slides" data-price="100"
                                     data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
+                            <span data-name="Birkenstock-Sandal-Slides" data-price="100"
                                 data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner13 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner13_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner13_5 delete-item2" data-name="Birkenstock-Sandal-Slides">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -759,30 +813,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Nike-AirForce-Sneakers"
+                            data-price="580"
+                            data-img="https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c25lYWtlcnN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="Very Stylish and Comfy Nike AirForce Sneakers" data-code="PDT-IC00762"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c25lYWtlcnN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">Nike AirForce Sneakers</h4>
+                        <p class="dress-card-para">FootWears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$580 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Nike-AirForce-Sneakers" data-price="580"
+                                    data-img="https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c25lYWtlcnN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Nike-AirForce-Sneakers" data-price="580"
+                                data-img="https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c25lYWtlcnN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner14 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner14_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner14_5 delete-item2" data-name="Nike-AirForce-Sneakers">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -793,30 +849,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="White-armless-blouse"
+                            data-price="150"
+                            data-img="https://images.unsplash.com/photo-1598554793905-075f7b355cd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJsb3VzZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            data-description="Casual White Armless Blouse" data-code="PDT-IC00223"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1598554793905-075f7b355cd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJsb3VzZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">White Armless Blouse</h4>
+                        <p class="dress-card-para">Women's Wears</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$150 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
+                                <div data-name="White-armless-blouse" data-price="150"
                                     data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
+                            <span data-name="White-armless-blouse" data-price="150"
                                 data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner15 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner15_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner15_5 delete-item2" data-name="White-armless-blouse">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -827,30 +885,32 @@
             <div class="item">
                 <div class="dress-card">
                     <div class="dress-card-head">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" class="dress-card-img-top"
-                            src="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Checkered-Jacket-And-Plain-Orange-Shirt"
+                            data-price="220"
+                            data-img="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            data-description="A Checkered Jacket And Plain-Orange Shirt" data-code="PDT-IC00440"
+                            class="dress-card-img-top"
+                            src="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="">
 
                     </div>
                     <div class="dress-card-body">
-                        <h4 class="dress-card-title">Harpa</h4>
-                        <p class="dress-card-para">Womans printed clothing</p>
-                        <p class="dress-card-para"><span class="dress-card-price">Rs.839 &ensp;</span><span
-                                class="dress-card-crossed">Rs.2099</span><span class="dress-card-off">&ensp;(60%
-                                OFF)</span></p>
+                        <h4 class="dress-card-title">Checkered Jack and Plain Shirt</h4>
+                        <p class="dress-card-para">Men's Wear</p>
+                        <p class="dress-card-para"><span class="dress-card-price">$220 &ensp;</span></p>
 
                         <div class="cards">
                             <div class=" card-button">
-                                <div data-name="Orange" data-price="0.5"
-                                    data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                <div data-name="Checkered-Jacket-And-Plain-Orange-Shirt" data-price="220"
+                                    data-img="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="add-to-cart card-button-inner bag-button">Add to Cart </div>
                             </div>
-                            <span data-name="Orange" data-price="0.5"
-                                data-img="https://images.unsplash.com/photo-1625910513399-c9fcba54338c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            <span data-name="Checkered-Jacket-And-Plain-Orange-Shirt" data-price="220"
+                                data-img="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hpcnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 class="likebtn inner16 add-to-list">
                                 <i class="fa-regular fa-heart"></i>
                             </span>
-                            <span class="likedbtn inner16_5 delete-item" data-name="Orange">
+                            <span class="likedbtn inner16_5 delete-item2" data-name="Checkered-Jacket-And-Plain-Orange-Shirt">
                                 <i class="fa-solid fa-heart "></i>
                             </span>
 
@@ -860,6 +920,273 @@
             </div>
         </div>
     </section>
+
+<br><br><br><br>
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <span class="sector">EXECUTIVE SECTION</span><button class="btn btn-light view">VIEW ALL</button>
+    </div>
+</div>
+<br>
+<section id="market " class="text-center justify-content-center ">
+    <div class="cards text-center justify-content-center container-fluid">
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Paul-Smith-Brown-Suit"
+                        data-price="2000"
+                        data-img="https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        data-description="Classic Brown Complete Paul Smith Suit" data-code="PDT-IC00121"
+                        class="dress-card-img-top"
+                        src="https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Paul Smith Suit</h4>
+                    <p class="dress-card-para">Men Wears</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$2,000 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="Paul-Smith-Brown-Suit" data-price="2000"
+                                data-img="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9vZGllc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="Paul-Smith-Brown-Suit" data-price="2000"
+                            data-img="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9vZGllc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="likebtn inner17 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner17_5 delete-item2" data-name="Paul-Smith-Brown-Suit">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="CalvinKlein-Suit"
+                        data-price="2200"
+                        data-img="https://images.unsplash.com/photo-1585846416120-3a7354ed7d39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        data-description="Striped Complete CalvinKlein Suit" data-code="PDT-IC00123"
+                        class="dress-card-img-top"
+                        src="https://images.unsplash.com/photo-1585846416120-3a7354ed7d39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Calvin Klein Suit</h4>
+                    <p class="dress-card-para">Men's Wear</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$2,200 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="CalvinKlein-Suit" data-price="2200"
+                                data-img="https://images.unsplash.com/photo-1585846416120-3a7354ed7d39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="CalvinKlein-Suit" data-price="2200"
+                            data-img="https://images.unsplash.com/photo-1585846416120-3a7354ed7d39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="likebtn inner18 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner18_5 delete-item2" data-name="CalvinKlein-Suit">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Kingsman-Suit"
+                        data-price="2150"
+                        data-img="https://images.unsplash.com/photo-1609840170480-4c440bcd5d8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        data-description="Grey colored Kingsman Suit" data-code="PDT-IC00448"
+                        class="dress-card-img-top"
+                        src="https://images.unsplash.com/photo-1609840170480-4c440bcd5d8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Classic Kingsman Suit</h4>
+                    <p class="dress-card-para">Men's Wear</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$2,150 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="Kingsman-Suit" data-price="2150"
+                                data-img="https://images.unsplash.com/photo-1609840170480-4c440bcd5d8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="Kingsman-Suit" data-price="2150"
+                            data-img="https://images.unsplash.com/photo-1609840170480-4c440bcd5d8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8U1VJVHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="likebtn inner19 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner19_5 delete-item2" data-name="Kingsman-Suit">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Giorgio-Armani-Suit"
+                        data-price="3000"
+                        data-img="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fFNVSVR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        data-description="A Blue Complete Giorgio Armani Suit" data-code="PDT-IC00808"
+                        class="dress-card-img-top"
+                        src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fFNVSVR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Giorgio Armani Suit</h4>
+                    <p class="dress-card-para">Men's Wears</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$3,000 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="Giorgio-Armani-Suit" data-price="3000"
+                                data-img="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fFNVSVR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="Giorgio-Armani-Suit" data-price="3000"
+                            data-img="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fFNVSVR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="likebtn inner20 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner20_5 delete-item2" data-name="Giorgio-Armani-Suit">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Heartloom-Carara-Blazer"
+                        data-price="2500"
+                        data-img="https://images.unsplash.com/photo-1604914509335-9001944f23d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fG9mZmljZSUyMHN1aXR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        data-description="White-Striped Heartloom Carara Blazer for Women" data-code="PDT-IC00334"
+                        class="dress-card-img-top"
+                        src="https://images.unsplash.com/photo-1604914509335-9001944f23d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fG9mZmljZSUyMHN1aXR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Heartloom Carara Blazer</h4>
+                    <p class="dress-card-para">Women's Wears</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$2,500 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="Heartloom-Carara-Blazer" data-price="2500"
+                                data-img="https://images.unsplash.com/photo-1604914509335-9001944f23d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fG9mZmljZSUyMHN1aXR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="Heartloom-Carara-Blazer" data-price="2500"
+                            data-img="https://images.unsplash.com/photo-1604914509335-9001944f23d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fG9mZmljZSUyMHN1aXR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="likebtn inner21 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner21_5 delete-item2" data-name="Heartloom-Carara-Blazer">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Toms-Corporate-Shoes"
+                        data-price="1500"
+                        data-img="https://img.freepik.com/free-photo/derby-shoes-men-formal-wear_53876-96609.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                        data-description="Genuine Italian leather brown corporate shoe" data-code="PDT-IC00146"
+                        class="dress-card-img-top"
+                        src="https://img.freepik.com/free-photo/derby-shoes-men-formal-wear_53876-96609.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Toms Brown Corporate Shoe</h4>
+                    <p class="dress-card-para">FootWears</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$1,500 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="Toms-Corporate-Shoes" data-price="1500"
+                                data-img="https://img.freepik.com/free-photo/derby-shoes-men-formal-wear_53876-96609.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="Toms-Corporate-Shoes" data-price="1500"
+                            data-img="https://img.freepik.com/free-photo/derby-shoes-men-formal-wear_53876-96609.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                            class="likebtn inner22 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner22_5 delete-item2" data-name="Toms-Corporate-Shoes">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dress-card">
+                <div class="dress-card-head">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal3" data-name="Versace-Shoe-And-Belt"
+                        data-price="2800"
+                        data-img="https://img.freepik.com/free-photo/shoes_1303-3607.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                        data-description="Versace Genuine Italian leather shoe and belt"data-code="PDT-IC00162"
+                        class="dress-card-img-top"
+                        src="https://img.freepik.com/free-photo/shoes_1303-3607.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                        alt="">
+
+                </div>
+                <div class="dress-card-body">
+                    <h4 class="dress-card-title">Versace Corporate Shoe and Belt</h4>
+                    <p class="dress-card-para">FootWears</p>
+                    <p class="dress-card-para"><span class="dress-card-price">$2,800 &ensp;</span></p>
+
+                    <div class="cards">
+                        <div class=" card-button">
+                            <div data-name="Versace-Shoe-And-Belt" data-price="2800"
+                                data-img="https://img.freepik.com/free-photo/shoes_1303-3607.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                                class="add-to-cart card-button-inner bag-button">Add to Cart </div>
+                        </div>
+                        <span data-name="Versace-Shoe-And-Belt" data-price="2800"
+                            data-img="https://img.freepik.com/free-photo/shoes_1303-3607.jpg?size=338&ext=jpg&ga=GA1.1.623027609.1677338512&semt=ais"
+                            class="likebtn inner23 add-to-list">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="likedbtn inner23_5 delete-item2" data-name="Versace-Shoe-And-Belt">
+                            <i class="fa-solid fa-heart "></i>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
