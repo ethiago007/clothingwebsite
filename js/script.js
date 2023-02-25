@@ -10,7 +10,8 @@
 
 
 $(document).ready(function () {
-
+  window.setTimeout('fadeout();', 3000);
+  $(".wholebody").hide();
   //   ----------------ADDING ITEM TO CART CODE----------------------
 
   $('.add-to-cart').click(function (event) {
@@ -749,9 +750,41 @@ $(document).ready(function () {
 
 
 
+  // REVIEW CAROUSEL
+  jQuery(document).ready(function($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1170: {
+            items: 1
+          }
+        }
+    });
+  });
 
 
+
+  
+  
 });
+
+
+
 
 
 

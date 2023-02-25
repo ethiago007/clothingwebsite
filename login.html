@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="img/photo_5933941273469762240_y.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LogIn/SignIn</title>
+</head>
+
+<body>
+
+
+
+    <main class="form-signin">
+        <form id="confirm">
+            <img class="mb-4" src="img/photo_5933941273469762240_y.jpg" alt="" width="100">
+            <h1 class="h3 mb-3 fw-normal">Please Register</h1>
+            <div class="form-floating">
+                <input type="name" class="form-control" id="floatingFirstName" placeholder="first-name">
+                <label for="floatingInput">First Name</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="name" class="form-control" id="floatingFirstName" placeholder="last-name">
+                <label for="floatingInput">Last Name</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="number" class="form-control" id="floatingPhoneNumber" placeholder="phone number">
+                <label for="floatingNumber">Phone Number</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPass" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingConfirmPass" placeholder="Password">
+                <label for="floatingPassword">Confirm Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+
+
+            <button class="btn btn-dark" type="submit">Register</button>
+            <p>Already have an account? <a class="btn btn-sm btn-outline-warning" href="./signIn.html">Sign In</a>
+                <br>
+
+            </p>
+            <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+
+        </form>
+
+    </main>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Incorrect!</strong>Passwords do not match.
+    </div>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <script src="js/login.js"></script>
+    
+  
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

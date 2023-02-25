@@ -17,6 +17,7 @@ searchBox.addEventListener("click", () => {
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+
 menuOpenBtn.onclick = function () {
     navLinks.style.left = "0";
 }
@@ -402,7 +403,7 @@ let wishList = (function () {
 
     // Remove all items from cart
     listsInWish.removeItemFromListAll = function (name) {
-        for (let item in cart) {
+        for (let item in list) {
             if (list[item].name === name) {
                 list.splice(item, 1);
                 break;
@@ -537,3 +538,46 @@ let prodPreview = (function () {
 })();
 
 
+
+// PRELOADER CODE 
+function fadeout(){
+    const preloader = document.querySelector('#app-preloader')
+  preloader.style.opacity = '0'
+  preloader.style.visibility = 'hidden'
+  $(".wholebody").show();
+  let textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({ loop: false })
+    .add({
+        targets: '.ml12 .letter',
+        translateX: [40, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+    }).add({
+        targets: '.ml12 .letter',
+        opacity: [1],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: (el, i) => 100 + 30 * i
+    });
+let textWrapper2 = document.querySelector('.ml10 .letters');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({ loop: false })
+    .add({
+        targets: '.ml10 .letter',
+        rotateY: [-90, 0],
+        duration: 1300,
+        delay: (el, i) => 85 * i
+    }).add({
+        targets: '.ml10',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+}
