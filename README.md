@@ -27,7 +27,7 @@ https://github.com/ethiago007/clothingwebsite.git
 
 
 ## LIVE DISPLAY
-https://everythingeffy.netlify.app/
+https://clothesshoes.netlify.app/
 
 
 ## CONTACT INFORMATION
